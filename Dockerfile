@@ -1,4 +1,4 @@
-FROM java:8-alpine
+FROM anapsix/alpine-java:8
 
 ADD https://s3-us-west-2.amazonaws.com/dynamodb-local/dynamodb_local_latest.tar.gz /
 RUN gunzip -c dynamodb_local_latest.tar.gz | tar xvf -
